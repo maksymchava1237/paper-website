@@ -1,0 +1,410 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Playfair Display';
+}
+
+.part1{
+	width: 100%;
+	height: 100vh;
+	background-image: url(../img/IMAGE.png);
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content:end;
+}
+
+
+
+.part2{
+	width: 100%;
+	height: 100vh;
+	background-image: url(../img/IMAGE2.png);
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content:end;
+}
+
+.part3{
+	width: 100%;
+	height: 100vh;
+	background-image: url(../img/Image3.png);
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content:end;
+}
+
+.part4{
+	width: 100%;
+	height: 100vh;
+	background-image: url(../img/image4.png);
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content:end;
+}
+
+.part5{
+	width: 100%;
+	height: 100vh;
+	background-image: url(../img/IMAGE\ \(2\).png);
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content:end;
+}
+
+a{
+	text-decoration: none;
+}
+
+.mainText{
+	color: rgb(255, 255, 255);
+	font-size: 120px;
+	text-align: center;
+	line-height: 120px;
+}
+
+
+.secondText{
+	color: rgb(233, 233, 233);
+	font-size: 20px;
+	margin-bottom: 100px;
+}
+
+.viewBtn{
+	width: 200px;
+	height: 50px;
+	background-color: rgba(255, 255, 255, 0);
+	border: solid #fff 1px;
+	border-radius: 50px;
+	color: #fff;
+	transition: 0.5s;
+	margin-bottom: 100px;
+}
+
+.viewBtn:hover{
+	background-color: rgba(255, 255, 255, 0.5);
+	transition: 0.5s;
+}
+
+/*header*/
+
+.header{
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 50;
+
+}
+
+.header:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+}
+
+.headerBody{
+	position: relative;
+	display: flex;
+	justify-content:space-between;
+	height: 90px;
+	align-items: center;
+}
+
+.container{
+	max-width: 1250px;
+	margin: 0px auto;
+	padding: 0px 10px;
+}
+
+.headerList{
+	display: flex;
+	position: relative;
+	z-index: 2;
+}
+
+.headerLink{
+	color: #fff;
+	font-size: 17px;
+	text-decoration: none;
+}
+
+.headerList li{
+	list-style: none;
+	margin: 0px 0px 0px 40px;
+}
+
+.headerLogo{
+	color:#fff;
+	font-size: 45px;
+	position: relative;
+	z-index: 3;
+	margin-bottom: 10px;
+}
+
+.headerBurger{
+	display: none;
+}
+
+/*header*/
+
+/*footer*/
+
+
+.footer{
+	width: 100%;
+	height: 60vh;
+	background-color: #000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.mainFootText{
+	font-style: normal;
+	font-weight: 400;
+	font-size: 50px;
+	line-height: 70px;
+	color: #fff;
+	text-align: center;
+	line-height: 50px;
+	margin-bottom: 10px;
+	
+}
+
+.footSecondText{
+	font-style: normal;
+	font-weight: 400;
+	font-size: 23px;
+	line-height: 38px;
+	text-align: center;
+	color: #fff;
+	margin-bottom: 20px;
+}
+
+.footerBtn{
+	width: 200px;
+	height: 50px;
+	background-color: white;
+	border: none;
+	border-radius: 50px;
+	font-weight: 700px;
+	transition: 0.5s;
+	margin-top: 20px;
+}
+
+.footerBtn:hover{
+	background-color: rgba(250, 235, 215, 0);
+	border: 1px solid #fff;
+	color: #fff;
+	transition: 0.5s;
+}
+
+
+/*footer*/
+
+/*response*/
+
+@media screen and (max-width: 1270px){
+	.headerBody{
+		padding-left: 20px ;
+	padding-right: 20px;
+	}
+}
+
+@media screen and (max-width: 900px){
+	.part3{
+		background-position: 1850px;
+	}
+	.mainText{
+		font-size: 100px;
+
+	}
+	.secondText{
+		margin-bottom: 70px;
+	}
+}
+@media (max-width:800px){
+
+	.mainText{
+		font-size: 80px;
+		line-height: 90px;
+	}
+
+	body.lock{
+		overflow: hidden;
+	}
+	.headerBody{
+		height: 80px;
+		display: flex;
+		align-items: center;
+	}
+	.headerBurger{
+		display: block;
+		position: relative;
+		width: 30px;
+		height: 20px;
+		position: relative;
+		z-index: 3;
+	}
+	.headerBurger span{
+		position: absolute;
+		background-color: #fff;
+		left: 0;
+		width: 100%;
+		height: 2px;
+		top: 9px;
+		transition: all 0.3s ease 0s;
+	}
+	.headerBurger::before,
+	.headerBurger::after{
+		content: '';
+		background-color: #fff;
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		left: 0;
+		transition: all 0.5s ease 0s;
+	}
+	.headerBurger:before{
+		top:0;
+	}
+	.headerBurger:after{
+		bottom: 0;
+	}
+	.headerBurger.active:before{
+		transform: rotate(45deg);
+		top: 9px;
+	}
+	.headerBurger.active:after{
+		transform: rotate(-45deg);
+		bottom: 9px;
+	}
+	.headerBurger.active span{
+		transform: scale(0);
+	}
+	.headerMenu{
+		position: fixed;
+		top: -100%;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		background-color: rgba(34, 39, 39, 0.849);
+		padding: 90px 0px 0px 0px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		transition: all 0.5s ease 0s;
+	}
+	.headerMenu.active{
+		top: 0;
+	}
+	.headerList{
+		display: block;
+	}
+	.headerList li{
+		margin: 0px 0px 30px 0px;
+		text-align: center;
+	}
+	.headerLink{
+		font-size: 25px;
+	}
+}
+@media screen and (max-width: 600px){
+	.mainText{
+		font-size: 60px;
+		line-height: 70px;
+	}
+}
+@media screen and (max-width: 450px){
+	.part2{
+		background-position: 700px;
+	}
+	.part3{
+		background-position: 1300px;
+	}
+	.mainText{
+		font-size: 50px;
+	}
+	.secondText{
+		font-size: 15px;
+	}
+	.mainFootText{
+		font-size: 30px;
+	}
+	.footSecondText{
+		font-size: 18px;
+	}
+	.footer{
+		height: 50vh;
+	}
+}
+@media screen and (max-width: 375px){
+	.part3{
+		background-position: 1100px;
+	}
+	.mainText{
+		font-size: 45px;
+		line-height: 60px;
+	}
+	.secondText{
+		font-size: 13px;
+	}
+}
+
+
+/*response*/
+
+/*                                          
+
+
+
+
+
+
+                        1010           1011
+                     1011010110    01011011001
+                   1101001010110010110101001010
+                  100110010100101001010001011001
+                   1110101010101010000101000100
+                     010101001010010011100111
+                       101001010101010010101
+						 101010011101001101
+                           11101001010101
+							 0110101010
+                               101110
+								1010
+                                 11
+
+
+
+
+
+
+
+
+*/
